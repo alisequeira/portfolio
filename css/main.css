@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Roboto-italic";
+  src: url(../assets/fuentes/Roboto/Roboto-Italic.ttf) format("truetype");
+}
 body {
   margin: 0;
   padding: 0;
@@ -23,7 +27,7 @@ header {
   background-attachment: fixed;
 }
 .socialLinks {
-  background: #4790cf;
+  background: #3aa79d;
   height: 50px;
 }
 .linksIcons {
@@ -37,7 +41,7 @@ header {
   height: 100%;
   padding-top: 10px;
   box-sizing: border-box;
-  color: #220dd2b3;
+  color: #000000;
   text-decoration: none;
 }
 nav {
@@ -52,13 +56,41 @@ nav {
   width: 200px;
   margin-top: 10px;
 }
-.profileLink {
+.myBlogs {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-right: 60px;
 }
-.profileLink a {
+.myBlogs a {
   text-decoration: underline;
   color: white;
+}
+/* main */
+.home {
+  display: block;
+  text-align: center;
+  height: 100vh;
+}
+.home h1 {
+  font-size: 60px;
+  margin: 0;
+  width: 100%;
+  margin-top: 100px;
+  font-weight: normal;
+  font-family: "Roboto-italic";
+  color: #3aa79d;
+  text-shadow: 3px 3px 0px #ca228e;
+}
+.home button {
+  margin-top: 50px;
+  font-size: 20px;
+  font-family: "Roboto-italic";
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #3aa79d;
+  border: 1px solid rgba(32, 33, 36, 0.28);
+  box-shadow: 3px 3px 0px #ca228e;
+  cursor: pointer;
+  border-radius: 10px;
 }
