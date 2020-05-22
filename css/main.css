@@ -1,12 +1,26 @@
 body {
   margin: 0;
   padding: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 header {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   height: 140px;
   width: 100%;
+}
+.mainBody {
+  background-image: url(../assets/img/Cover.png);
+  position: fixed;
+  background-position: center;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
 }
 .socialLinks {
   background: #4790cf;
@@ -23,6 +37,8 @@ header {
   height: 100%;
   padding-top: 10px;
   box-sizing: border-box;
+  color: #220dd2b3;
+  text-decoration: none;
 }
 nav {
   display: grid;
@@ -39,6 +55,7 @@ nav {
 .profileLink {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   margin-right: 60px;
 }
 .profileLink a {
