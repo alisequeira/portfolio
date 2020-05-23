@@ -39,3 +39,20 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
+.fadeIn {
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
