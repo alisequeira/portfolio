@@ -138,3 +138,71 @@ nav {
 .aboutMe p strong {
   color: #1949a0;
 }
+/* projects */
+/* mainProject */
+.mainProject {
+  background: #e6e9ed;
+}
+.mainProjectContainer {
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr;
+  padding: 20px;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: grid;
+}
+.imgMainProject {
+  grid-column: 1;
+  width: 100%;
+}
+.imgProject img {
+  width: 80%;
+}
+.mainPorjectDescription {
+  grid-column: 2;
+  width: 100%;
+  text-align: start;
+  font-size: 20px;
+  font-family: "Roboto-italic";
+}
+.mainPorjectDescription h2 {
+  font-size: 1.5em;
+}
+.mainPorjectDescription p {
+  font-size: 1em;
+}
+/* list project */
+.projectList {
+  column-gap: 5px;
+  row-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr;
+  max-width: 1024px;
+  margin: 0 auto;
+  justify-items: center;
+}
+.project {
+  max-width: 400px;
+  border: 1px solid #1949a0;
+}
+.projectImg {
+  width: 100%;
+  margin: 0;
+}
+.projectImg img {
+  width: 100%;
+}
+.projectList h3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  justify-self: center;
+}
+.descriptionContent {
+  padding: 0 10px;
+  object-fit: contain;
+}
+.descriptionContent p,
+h3 {
+  margin: 0;
+}
