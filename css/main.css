@@ -176,11 +176,12 @@ nav {
   column-gap: 5px;
   row-gap: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, minmax(100px, 293px));
   grid-template-rows: auto 1fr;
   max-width: 1024px;
   margin: 0 auto;
   justify-items: center;
+  justify-content: center;
 }
 .project {
   max-width: 400px;
