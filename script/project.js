@@ -20,6 +20,18 @@ async function getData(url) {
   return data;
 }
 
+function mainProjectTemplate(data) {
+  return `
+          <div class="mainPorjectDescription">
+          <h2>${data[5].name}</h2>
+          <p>${data[5].description}</p>
+          <a href="https://github.com/alisequeira/portfolio">
+              <button>go to github</button>
+          </a>
+          </div>
+          </div>`;
+}
+
 function projectsTemplate1(data) {
   return `<article class="project" id="articleContainer">
     <figure class="projectImg" id="imgFigure">
@@ -29,7 +41,7 @@ function projectsTemplate1(data) {
         <h3>${data[0].name}</h3>
     <p>${data[0].description}</p>
     <br>
-    <a href="https://github.com/alisequeira/aboutme-html-and-css-practice" target="_blank">
+    <a href="https://github.com/alisequeira/aboutme-html-and-css-practice" target= "_blank">
       <button>go to github</button>
     </a>
 </div>
@@ -136,4 +148,11 @@ getData(GH_URL).then((data) => {
   const element = html.body.children[0];
   document.getElementById("projects").append(element);
   // document.getElementById("projects").innerHTML = htmlString;
+});
+getData(GH_URL).then((data) => {
+  const htmlString = mainProjectTemplate(data);
+  const html = document.implementation.createHTMLDocument();
+  html.body.innerHTML = htmlString;
+  const element = html.body.children[0];
+  document.getElementById("mainSection").append(element);
 });
