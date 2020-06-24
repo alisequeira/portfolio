@@ -117,7 +117,7 @@ function projectsTemplate6(data) {
         <h3>${data[6].name}</h3>
     <p>${data[6].description}</p>
     <br>
-    <a href="https://github.com/alisequeira/graphic-programming-BOOKMARKET" target="_blank">
+    <a href="https://github.com/alisequeira/video-games-news" target="_blank">
       <button>go to github</button>
     </a>
 </div>
