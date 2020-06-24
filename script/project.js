@@ -108,6 +108,21 @@ function projectsTemplate5(data) {
 </div>
 </article>`;
 }
+function projectsTemplate6(data) {
+  return `<article class="project" id="articleContainer">
+    <figure class="projectImg" id="imgFigure">
+        <img src="./assets/img/uriel-soberanes-MxVkWPiJALs-unsplash.jpg" alt="">
+    </figure>
+    <div class="descriptionContent" id="projectDescription">
+        <h3>${data[6].name}</h3>
+    <p>${data[6].description}</p>
+    <br>
+    <a href="https://github.com/alisequeira/graphic-programming-BOOKMARKET" target="_blank">
+      <button>go to github</button>
+    </a>
+</div>
+</article>`;
+}
 
 getData(GH_URL).then((data) => {
   const htmlString = projectsTemplate1(data);
@@ -155,4 +170,12 @@ getData(GH_URL).then((data) => {
   html.body.innerHTML = htmlString;
   const element = html.body.children[0];
   document.getElementById("mainSection").append(element);
+});
+getData(GH_URL).then((data) => {
+  const htmlString = projectsTemplate6(data);
+  const html = document.implementation.createHTMLDocument();
+  html.body.innerHTML = htmlString;
+  const element = html.body.children[0];
+  document.getElementById("projects").append(element);
+  // document.getElementById("projects").innerHTML = htmlString;
 });
